@@ -34,6 +34,8 @@ public class checkConsonantOrVowel {
         // System.out.println("It is a consonant");
         // }
 
+        // OR || operator
+
         if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'A' || ch == 'E' || ch == 'I'
                 || ch == 'O' || ch == 'U') {
             System.out.println("It is a vowel");
