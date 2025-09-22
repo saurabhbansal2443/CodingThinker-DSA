@@ -6,6 +6,7 @@ public class checkTriangle {
         // equilateral, isosceles or scalene triangle
 
         // triangle -- 3 sides
+
         // Eqilateral - 3 sides are equal
         // Iossceles - 2 sides are equal
         // scalene - all sides are unequal
@@ -22,6 +23,6 @@ public class checkTriangle {
         } else {
             System.out.println("The traingle is scalene ");
         }
-
+        
     }
 }
