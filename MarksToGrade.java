@@ -11,23 +11,14 @@ public class MarksToGrade {
         // Percentage >= 60%: Grade D
         // Percentage >= 40%: Grade E
         // Percentage < 40%: Grade F
-
         Scanner sc = new Scanner(System.in);
-
         int physics = sc.nextInt();
         int chemistry = sc.nextInt();
         int biology = sc.nextInt();
         int mathematics = sc.nextInt();
         int computerScience = sc.nextInt();
-
         int totalMarksObtained = physics + chemistry + biology + mathematics + computerScience;
-
-        System.out.println("percentage" + totalMarksObtained);
-
-        int percentage = (totalMarksObtained*100) / 500 ; 
-
-        System.out.println("percentage" + percentage);
-
+        int percentage = (totalMarksObtained * 100) / 500;
         if (percentage >= 90) {
             System.out.println("A Grade");
         } else if (percentage >= 80) {
