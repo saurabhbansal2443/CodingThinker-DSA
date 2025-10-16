@@ -6,8 +6,18 @@ public class MultipleOf5And7 {
 
         int n = 45;
 
-        if (n % 5 == 0 && n % 7 == 0) {
-            System.out.println("yes");
+        // if (n % 5 == 0 && n % 7 == 0) {
+        // System.out.println("yes");
+        // } else {
+        // System.out.println("No");
+        // }
+
+        if (n % 5 == 0) {
+            if (n % 7 == 0) {
+                System.out.println("yes");
+            } else {
+                System.out.println("No");
+            }
         } else {
             System.out.println("No");
         }
