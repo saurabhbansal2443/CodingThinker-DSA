@@ -20,7 +20,11 @@ public class InputInJava {
 
         char ch = sc.next().charAt(0); // way to take the input of character
 
-        System.out.println("ch   " + ch);
+       
+        System.out.println("num1 " + num1);
+        System.out.println("Str " + str);
+        System.out.println("db " + db);
+        System.out.println("ch " + ch );
 
     }
 }

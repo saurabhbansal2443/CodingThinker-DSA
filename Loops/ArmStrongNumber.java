@@ -10,21 +10,23 @@ public class ArmStrongNumber {
 
         int n = sc.nextInt();
 
-        int nCopy = n;
-
         int sum = 0;
 
-        while (n > 0) {
-            int ld = n % 10;
-            sum = sum + (ld * ld * ld);
-            int rem = n / 10;
-            n = rem;
-        }
+        // while (n > 0) {
+        // int ld = n % 10;
+        // sum = sum + (ld * ld * ld);
+        // int rem = n / 10;
+        // n = rem;
+        // }
 
-        if (nCopy == sum) {
-            System.out.println("ArmStrong number");
+        for (int i = n; i > 0; i = i / 10) {
+            int ld = i % 10;
+            sum = sum + (ld * ld * ld);
+        }
+        if (sum == n) {
+            System.out.println("Armstrong");
         } else {
-            System.out.println("Not ArmStrong ");
+            System.out.println("Not");
         }
 
     }
