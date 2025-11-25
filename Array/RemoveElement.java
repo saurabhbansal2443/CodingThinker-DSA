@@ -14,20 +14,15 @@ public class RemoveElement {
                 countEle++;
             }
         }
-
         if (countEle > 0) {
             int[] narr = new int[arr.length - countEle];
-
             int idx = 0;
-
             for (int i = 0; i < arr.length; i++) {
-
                 if (arr[i] != ele) {
                     narr[idx] = arr[i];
                     idx++;
                 }
             }
-
             arr = narr;
         }
         for (int i = 0; i < arr.length; i++) {
