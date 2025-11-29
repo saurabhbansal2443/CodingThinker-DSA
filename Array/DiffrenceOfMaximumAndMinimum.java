@@ -7,7 +7,7 @@ public class DiffrenceOfMaximumAndMinimum {
         // Write a Java program to find the maximum and minimum elements in an array
         // using a single loop.
 
-        int[] arr = { 0, 7, 6, 1, 3, 2, 4, 5, 0, 8 };
+        int[] arr = { 0, 7, 6, 1, 3, 2, 4, 5, 0, 8 }; // n 
 
         int max = arr[0];
         int min = arr[0];
@@ -21,6 +21,9 @@ public class DiffrenceOfMaximumAndMinimum {
                 min = ele;
             }
         }
+
+        // Time Complexity - O(n)
+        // Space Complexity - O(1)
 
         System.out.println(max - min);
 

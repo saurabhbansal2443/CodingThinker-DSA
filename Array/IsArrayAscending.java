@@ -20,6 +20,8 @@ public class IsArrayAscending {
                 break;
             }
         }
+        // Time Complexity - O(n)
+        // Space Complexity - O(1)
 
         System.out.println(flag);
 

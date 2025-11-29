@@ -18,6 +18,9 @@ public class Reverse {
             end--;
         }
 
+        // Time Complexity - O(n)
+        // Space Complexity - O(1)
+
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + "    ");
         }

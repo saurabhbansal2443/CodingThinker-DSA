@@ -11,6 +11,8 @@ public class SumOfElementAtEvenIndex {
         for (int i = 0; i < arr.length; i += 2) {
             sum = sum + arr[i];
         }
+        // Time Complexity - O(n)
+        // Space Complexity - O(1)
 
         System.out.println(sum);
     }

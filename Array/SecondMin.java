@@ -19,6 +19,8 @@ public class SecondMin {
                 smin = ele;
             }
         }
+        // Time Complexity - O(n)
+        // Space Complexity - O(1)
 
         System.out.println("minimum " + min + " SecondMinimum " + smin);
     }

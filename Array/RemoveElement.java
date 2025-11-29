@@ -25,6 +25,10 @@ public class RemoveElement {
             }
             arr = narr;
         }
+
+        // Time Complexity - O(2n)
+        // Space Complexity - O(n)
+
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + "    ");
         }

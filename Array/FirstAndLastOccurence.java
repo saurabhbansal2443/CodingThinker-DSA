@@ -20,6 +20,9 @@ public class FirstAndLastOccurence {
                 lo = i;
             }
         }
+        // Time Complexity - O(n)
+        // Space Complexity - O(1)
+
         System.out.println("First Occurence is at " + fo);
         System.out.println("Last Occurence is at " + lo);
 

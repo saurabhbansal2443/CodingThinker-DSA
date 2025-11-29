@@ -16,6 +16,9 @@ public class Maximum {
             }
         }
 
+        // Time Complexity - O(n)
+        // Space Complexity - O(1)
+
         System.out.println(max);
 
     }

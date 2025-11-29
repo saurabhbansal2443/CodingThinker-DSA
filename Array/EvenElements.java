@@ -14,6 +14,9 @@ public class EvenElements {
             }
         }
 
+        // Time Complexity - O(n)
+        // Space Complexity - O(1) 
+
         System.out.println(count);
     }
 }
