@@ -2,6 +2,8 @@ package Array;
 
 public class RemoveDuplicate {
     public static void main(String[] args) {
+        // Write a program to remove duplicates from an integer sorted array.
+
         int[] arr = { 1, 1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 4, 5, 6, 7 };
 
         int[] ans = new int[arr.length];
