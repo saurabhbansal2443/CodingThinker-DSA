@@ -42,6 +42,9 @@ public class SumOfDigits {
             res = res2;
         }
 
+        // SpaceComplexity - O(n)
+        // TimeComplecity - O(n)
+
         System.out.println(Arrays.toString(res));
     }
 }
