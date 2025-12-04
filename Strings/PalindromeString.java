@@ -23,7 +23,7 @@ public class PalindromeString {
             if (ch >= 'a' && ch <= 'z') {
                 ans += ch;
             } else if (ch >= 'A' && ch <= 'Z') {
-                char convertedChar = (char) (ch - 'A' + 'a');
+                char convertedChar = (char) (ch - 'A' + 'a');// C-> 99 - 97 + 65 == 67 
                 ans += convertedChar;
             } else {
                 ans += ch;
