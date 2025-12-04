@@ -2,18 +2,21 @@ package Functions;
 
 public class Basics {
     public static void main(String[] args) { // Main function
-        int[] arr = { 1, 4, 2, 48, 9 };
-        MaxEle(arr);
+        int c = 10;
+        int d = 10;
+
+        int sum = sum(c, d);
+        System.out.println(sum);
     }
 
-    public static void MaxEle(int[] arr) {
-        int max = Integer.MIN_VALUE;
-
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] > max) {
-                max = arr[i];
-            }
-        }
-        System.out.println(max);
+    public static void Greet() {
+        System.out.println("GoodMorning");
     }
+
+    public static int sum(int a, int b) {
+        int sum = a + b;
+
+        return sum;
+    }
+
 }
