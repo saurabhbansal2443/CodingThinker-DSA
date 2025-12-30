@@ -13,11 +13,11 @@ public class CountLongestWordLength {
 
     public static int countMaxLength(String str) {
         int max = 0;
-        String longestWord = "";
+        StringBuilder longestWord = new StringBuilder();
 
         int idx = 0;
         int count = 0;
-        String word = "";
+        StringBuilder word = new StringBuilder();
 
         while (idx < str.length()) {
 
@@ -26,21 +26,21 @@ public class CountLongestWordLength {
             if (ch == ' ') {
                 if (max < count) {
                     max = count;
-                    longestWord = word;
+                    longestWord.replace(0, longestWord.length(), word.toString());
                 }
                 count = 0;
-                word = "";
+                word.delete(0, word.length());
             } else {
-                word = word + ch;
+                word.append(ch);
                 count++;
             }
             idx++;
         }
         if (max < count) {
-            longestWord = word;
+            longestWord.replace(0, longestWord.length(), word.toString());
             max = count;
         }
-        System.out.println(longestWord);
+        System.out.println(longestWord.toString());
         return max;
     }
 }

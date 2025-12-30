@@ -30,4 +30,27 @@ public class ConvertCapitalize {
         }
         return ans;
     }
+
+    public static String convertCaptialaizeSB(String str) {
+        StringBuilder ans = new StringBuilder();
+
+        char fc = str.charAt(0);
+
+        if (fc >= 'a' && fc <= 'z') {
+            fc = (char) (fc - 'a' + 'A');
+        }
+        ans.append(fc);
+
+        for (int i = 1; i < str.length(); i++) {
+            char pre = str.charAt(i - 1);
+            char curr = str.charAt(i);
+
+            if (pre == ' ' && curr >= 'a' && curr <= 'z') {
+                curr = (char) (curr - 'a' + 'A');
+            }
+
+            ans.append(curr);
+        }
+        return ans.toString();
+    }
 }
